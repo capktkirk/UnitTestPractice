@@ -52,7 +52,7 @@ Test(PracticeTest, is_sort_with_negative)
 	ASSERT_LE(num[2], num[0]);
 }
 
-Test(PracticeTest, haver_two_same)
+Test(PracticeTest, have_two_same)
 {
 	Practice obj;
 	int num[3] = {1, 1, 2};
