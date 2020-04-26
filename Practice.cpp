@@ -2,6 +2,7 @@
 #include <string>
 
 using std::string;
+// using std::find;
 
 // Receive three integers and rearrange their values so that they are in
 // descending order from greatest (first) to least (third)
@@ -32,7 +33,7 @@ void Practice::sortDescending(int & first, int & second, int & third)
 // character in the string, but disregarding case ('x' is the same as 'X')
 bool Practice::isPalindrome(string input)
 {
-  input.erase(std::find(input.begin(), input.end(), '\0', input.end()));
+  input.erase(find(input.begin(), input.end(), '\0', input.end()));
   for(int i=0; i < input.size(); i++)
   {
     if( input[i] < 'A' || input[i] > 'Z' )
