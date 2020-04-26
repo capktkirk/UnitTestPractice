@@ -58,6 +58,7 @@ TEST(PracticeTest, null_char_palindrome){
 	ASSERT_FALSE(actual);
 	actual = obj.isPalindrome("abba\0");
 	ASSERT_FALSE(actual);
+	actual = obj.isPalindrome("ab\0bb");
 }
 
 /*
