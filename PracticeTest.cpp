@@ -55,10 +55,11 @@ TEST(PracticeTest, is_not_palindrome)
 TEST(PracticeTest, null_char_palindrome){
 	Practice obj;
 	bool actual = obj.isPalindrome("\0abba");
-	ASSERT_FALSE(actual);
+	ASSERT_TRUE(actual);
 	actual = obj.isPalindrome("abba\0");
-	ASSERT_FALSE(actual);
+	ASSERT_TRUE(actual);
 	actual = obj.isPalindrome("ab\0bb");
+	ASSERT_FALSE(actual);
 }
 
 /*
