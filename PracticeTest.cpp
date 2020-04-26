@@ -36,7 +36,7 @@ TEST(PracticeTest, is_not_palindrome)
 {
 	Practice obj;
 	bool actual = obj.isPalindrome("123abc");
-	ASSERT_TRUE(actual);
+	ASSERT_FALSE(actual);
 }
 
 
@@ -50,15 +50,15 @@ TEST(PracticeTest, is_simple_sort)
 	ASSERT_LE(num[2], num[0]);
 }
 
-// Test(PracticeTest, is_sort_with_negative)
-// {
-// 	Practice obj;
-// 	int num[3] = { 2, -1, -2 };
-// 	obj.sortDescending(num[0], num[1], num[2]);
-// 	ASSERT_LE(num[1], num[0]);
-// 	ASSERT_LE(num[2], num[1]);
-// 	ASSERT_LE(num[2], num[0]);
-// }
+Test(PracticeTest, is_sort_with_negative)
+{
+	Practice obj;
+	signed int num[3] = { 2, -1, -2 };
+	obj.sortDescending(num[0], num[1], num[2]);
+	ASSERT_LE(num[1], num[0]);
+	ASSERT_LE(num[2], num[1]);
+	ASSERT_LE(num[2], num[0]);
+}
 
 // Test(PracticeTest, have_two_same)
 // {
