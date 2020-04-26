@@ -42,22 +42,22 @@ TEST(PracticeTest, is_simple_sort)
 	ASSERT_LE(num[2], num[0]);
 }
 
-Test(PracticeTest, is_sort_with_negative)
-{
-	Practice obj;
-	int num[3] = { 2, -1, -2 };
-	obj.sortDescending(num[0], num[1], num[2]);
-	ASSERT_LE(num[1], num[0]);
-	ASSERT_LE(num[2], num[1]);
-	ASSERT_LE(num[2], num[0]);
-}
+// Test(PracticeTest, is_sort_with_negative)
+// {
+// 	Practice obj;
+// 	int num[3] = { 2, -1, -2 };
+// 	obj.sortDescending(num[0], num[1], num[2]);
+// 	ASSERT_LE(num[1], num[0]);
+// 	ASSERT_LE(num[2], num[1]);
+// 	ASSERT_LE(num[2], num[0]);
+// }
 
-Test(PracticeTest, have_two_same)
-{
-	Practice obj;
-	int num[3] = {1, 1, 2};
-	obj.sortDescending(num[0], num[1], num[2]);
-	ASSERT_LE(num[2], num[1]);
-	ASSERT_EQ(num[1], num[0]);
+// Test(PracticeTest, have_two_same)
+// {
+// 	Practice obj;
+// 	int num[3] = {1, 1, 2};
+// 	obj.sortDescending(num[0], num[1], num[2]);
+// 	ASSERT_LE(num[2], num[1]);
+// 	ASSERT_EQ(num[1], num[0]);
 
-}
+// }
