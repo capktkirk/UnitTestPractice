@@ -40,7 +40,7 @@ bool Practice::isPalindrome(string input)
   //     input.erase(pos);
   //     pos = input.find('\0');
   // }
-  int* ptr = &input;
+  void* ptr = &input;
   std::cout << "input == " << input << ptr+1 << '\n';
 
   //input.erase(input.find('\0'));
