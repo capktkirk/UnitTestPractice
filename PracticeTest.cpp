@@ -23,6 +23,14 @@ TEST(PracticeTest, is_simple_palindrome)
 	ASSERT_TRUE(obj.isPalindrome(".."));
 }
 
+TEST(PRacticeTest, is_upper_lower_palindrome){
+	Practice obj;
+	ASSERT_TRUE(obj.isPalindrome("Aa"));
+	ASSERT_FALSE(obj.isPalindrome("Za"));
+	ASSERT_FALSE(obj.isPalindrome("TaCOcAt"));
+}
+
+
 TEST(PracticeTest, is_notAlpha){
 	Practice obj;
 	bool actual = obj.isPalindrome("./\\.");
