@@ -21,4 +21,13 @@ TEST(PracticeTest, is_simple_palindrome)
     ASSERT_TRUE(actual);
     actual = obj.isPalindrome("aba");
     ASSERT_TRUE(actual);
+    actual = obj.isPalindrome("with spacesceaps htiw");
+    ASSERT_TRUE(actual);
+}
+
+TEST(PracticeTest, is_palindrome_with_symbols)
+{
+	Practice obj;
+	bool actual = obj.isPalindrome("..a..");
+	ASSERT_TRUE(actual);
 }
