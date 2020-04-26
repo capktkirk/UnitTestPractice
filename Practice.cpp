@@ -31,10 +31,10 @@ void Practice::sortDescending(int & first, int & second, int & third)
 // Receive a string and return whether or not it is strictly a palindrome,
 // where it is spelled the same backwards and forwards when considering every
 // character in the string, but disregarding case ('x' is the same as 'X')
-bool Practice::isPalindrome(string input)
+bool Practice::isPalindrome(string *input)
 {
   // while((auto pos = input.find('\0')) != std::string::npos)
-  auto pos = input.find("\0");
+  auto pos = input.find('\0');
   while(pos != std::string::npos)
   {
       input.erase(pos);
