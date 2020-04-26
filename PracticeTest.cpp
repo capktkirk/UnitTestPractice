@@ -54,7 +54,7 @@ TEST(PracticeTest, is_simple_sort)
 	num[0] = -1;
 	num[1] = 0;
 	num[2] = 1;
-	obj.sortDescending(num[0], num[1], num2[]);
+	obj.sortDescending(num[0], num[1], num[2]);
 	ASSERT_LE(num[1], num[0]);
 	ASSERT_LE(num[2], num[1]);
 	ASSERT_LE(num[2], num[0]);
