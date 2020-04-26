@@ -40,13 +40,13 @@ bool Practice::isPalindrome(string input)
   //     input.erase(pos);
   //     pos = input.find('\0');
   // }
-  char* ptr = input;
-  std::cout << "input == " << input << '\n' << "ptr + 1 ==" << *(ptr)+1 << '\n';
+  // char* ptr = input;
+  // std::cout << "input == " << input << '\n' << "ptr + 1 ==" << *(ptr)+1 << '\n';
 
   //input.erase(input.find('\0'));
   for(int i=0; i < input.size(); i++)
   {
-    if( input[i] < 'A' || input[i] > 'Z' )
+    if( input[i] >= 'a' && input[i] <= 'z' )
     {
       //change lower case to upper case
       input[i] = input[i] - ('a' - 'A');
