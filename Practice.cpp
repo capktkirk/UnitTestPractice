@@ -40,8 +40,8 @@ bool Practice::isPalindrome(string input)
   //     input.erase(pos);
   //     pos = input.find('\0');
   // }
-  cout << "input == " << input << endl;
-  
+  std::cout << "input == " << input << std::endl;
+
   //input.erase(input.find('\0'));
   for(int i=0; i < input.size(); i++)
   {
