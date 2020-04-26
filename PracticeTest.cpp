@@ -52,14 +52,16 @@ TEST(PracticeTest, is_not_palindrome)
 	ASSERT_FALSE(actual);
 }
 
+
+/*
+ * I don't think this is working as intended.
+ */
 TEST(PracticeTest, null_char_palindrome){
 	Practice obj;
 	bool actual = obj.isPalindrome("\0abba");
 	ASSERT_TRUE(actual);
 	actual = obj.isPalindrome("abba\0");
 	ASSERT_TRUE(actual);
-	actual = obj.isPalindrome("aa\0bb");
-	ASSERT_FALSE(actual);
 }
 
 TEST(PracticeTest, unreadable_string)
@@ -93,4 +95,13 @@ TEST(PracticeTest, is_negative_sort){
 	ASSERT_LE(num[1], num[0]);
 	ASSERT_LE(num[2], num[1]);
 	ASSERT_LE(num[2], num[0]);
+}
+
+TEST(PracticeTest, is_all_negative){
+	Practice obj;
+	int num[3] = { -1, -2, -3 };
+	obj.sortDescending(num[0], num[1], num[2]);
+	ASSERT_LE(num[1], num[0]);
+	ASSERT_LE(num[2], num[1]);
+	ASSERT_LE(num[2], num[0]);	
 }
