@@ -36,10 +36,12 @@ TEST(PracticeTest, is_notAlpha){
 	ASSERT_FALSE(actual);
 }
 TEST(PracticeTest, is_Number){
+	Practice obj;
 	ASSERT_FALSE(obj.isPalindrome("1"));
 }
 
 TEST(PracticeTest, is_Not_palindrome){
+	Practice obj;
 	ASSERT_FALSE(obj.isPalindrome("ab"));
 	ASSERT_FALSE(obj.isPalindrome("Za"));
 }
