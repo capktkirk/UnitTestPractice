@@ -34,7 +34,7 @@ void Practice::sortDescending(int & first, int & second, int & third)
 bool Practice::isPalindrome(string input)
 {
   int pos = -1;
-  while((pos = input.find('\0') != std::string::npos){
+  while((pos = input.find('\0')) != std::string::npos){
       input.erase(pos);
   }
   //input.erase(input.find('\0'));
