@@ -16,9 +16,10 @@ class PracticeTest : public ::testing::Test
 
 TEST(PracticeTest, is_simple_palindrome)
 {
-    Practice obj;
-    bool actual = obj.isPalindrome("aa");
-    ASSERT_TRUE(actual);
+	ASSERT_TRUE(obj.isPalindrome("aa"));
+	ASSERT_FALSE(obj.isPalindrome("ab"));
+	ASSERT_TRUE(obj.isPalindrome("tacocat"));
+	ASSERT_TRUE(obj.isPalindrome(".."));
 }
 
 TEST(PracticeTest, is_notAlpha){
