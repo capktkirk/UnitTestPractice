@@ -33,6 +33,11 @@ TEST(PracticeTest, is_single_palindrome){
 	ASSERT_TRUE(actual);
 }
 
+TEST(PracticeTest, is_empty_palindrome){
+	Practice obj;
+	bool actual = obj.isPalindrome("");
+	ASSERT_TRUE(actual);
+}
 TEST(PracticeTest, is_palindrome_with_symbols)
 {
 	Practice obj;
@@ -47,7 +52,9 @@ TEST(PracticeTest, is_not_palindrome)
 	ASSERT_FALSE(actual);
 }
 
-
+/*
+ * Check simple sorting of positive numbers.
+ */
 TEST(PracticeTest, is_simple_sort)
 {
 	Practice obj;
@@ -56,10 +63,10 @@ TEST(PracticeTest, is_simple_sort)
 	ASSERT_LE(num[1], num[0]);
 	ASSERT_LE(num[2], num[1]);
 	ASSERT_LE(num[2], num[0]);
-	/*
-	 * Check for Negative Values.
-	 */
 }
+/*
+ * Check for Negative Values.
+ */
 TEST(PracticeTest, is_negative_sort){
 	// num[0] = 1;
 	// num[1] = 0;
