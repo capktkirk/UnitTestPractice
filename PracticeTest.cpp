@@ -32,7 +32,7 @@ TEST(PracticeTest, is_palindrome_with_symbols)
 	ASSERT_TRUE(actual);
 }
 
-TEST(PracticeTest, is_simple_sort))
+TEST(PracticeTest, is_simple_sort)
 {
 	Practice obj;
 	int num[3] = { 7, 5, 3 };
