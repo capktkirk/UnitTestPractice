@@ -18,7 +18,6 @@ TEST(PracticeTest, is_simple_palindrome)
 {
 	Practice obj;
 	ASSERT_TRUE(obj.isPalindrome("aa"));
-	ASSERT_FALSE(obj.isPalindrome("ab"));
 	ASSERT_TRUE(obj.isPalindrome("tacocat"));
 	ASSERT_TRUE(obj.isPalindrome(".."));
 }
@@ -38,4 +37,9 @@ TEST(PracticeTest, is_notAlpha){
 }
 TEST(PracticeTest, is_Number){
 	ASSERT_FALSE(obj.isPalindrome("1"));
+}
+
+TEST(PracticeTest, is_Not_palindrome){
+	ASSERT_FALSE(obj.isPalindrome("ab"));
+	ASSERT_FALSE(obj.isPalindrome("Za"));
 }
