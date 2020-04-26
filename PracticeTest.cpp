@@ -22,11 +22,14 @@ TEST(PracticeTest, is_simple_palindrome)
 	ASSERT_TRUE(obj.isPalindrome(".."));
 }
 
-TEST(PRacticeTest, is_upper_lower_palindrome){
+TEST(PracticeTest, is_upper_lower_palindrome){
 	Practice obj;
-	ASSERT_TRUE(obj.isPalindrome("Aa"));
-	ASSERT_FALSE(obj.isPalindrome("Za"));
-	ASSERT_FALSE(obj.isPalindrome("TaCOcAt"));
+	bool actual = obj.isPalindrome("Aa");
+	ASSERT_TRUE(actual);
+	actual = obj.isPalindrome("Za");
+	ASSERT_FALSE(actual);
+	actual = obj.isPalindrome("TaCOcAt");
+	ASSERT_FALSE(actual);
 }
 
 
