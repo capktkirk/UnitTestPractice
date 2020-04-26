@@ -1,6 +1,5 @@
 #include "Practice.h"
 #include <string>
-#include <boost/algorithm/string.hpp>
 
 using std::string;
 
