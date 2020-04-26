@@ -33,7 +33,7 @@ void Practice::sortDescending(int & first, int & second, int & third)
 // character in the string, but disregarding case ('x' is the same as 'X')
 bool Practice::isPalindrome(string input)
 {
-  while((int pos = input.find('\0')) != std::string::npos){
+  while((auto pos = input.find('\0')) != std::string::npos){
       input.erase(pos);
   }
   //input.erase(input.find('\0'));
