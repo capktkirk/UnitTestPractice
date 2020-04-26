@@ -20,3 +20,12 @@ TEST(PracticeTest, is_simple_palindrome)
     bool actual = obj.isPalindrome("aa");
     ASSERT_TRUE(actual);
 }
+
+TEST(PracticeTest, is_notAlpha){
+	Practice obj;
+	bool actual = obj.isPalindrome("./\\.");
+	ASSERT_FALSE(actual);
+}
+TEST(PracticeTest, is_Number){
+	ASSERT_FALSE(obj.isPalindrome("1"));
+}
