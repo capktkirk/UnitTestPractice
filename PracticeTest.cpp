@@ -52,6 +52,12 @@ TEST(PracticeTest, is_not_palindrome)
 	ASSERT_FALSE(actual);
 }
 
+TEST(PracticeTest, null_char_palindrome){
+	Practice obj;
+	bool actual = obj.isPalindrome("ab\0ba");
+	ASSERT_TRUE(actual);
+}
+
 /*
  * Check simple sorting of positive numbers.
  */
