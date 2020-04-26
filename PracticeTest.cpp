@@ -32,6 +32,14 @@ TEST(PracticeTest, is_palindrome_with_symbols)
 	ASSERT_TRUE(actual);
 }
 
+TEST(PracticeTest, is_not_palindrome)
+{
+	Practice obj;
+	bool actual = obj.isPalindrome("123abc");
+	ASSERT_TRUE(actual);
+}
+
+
 TEST(PracticeTest, is_simple_sort)
 {
 	Practice obj;
