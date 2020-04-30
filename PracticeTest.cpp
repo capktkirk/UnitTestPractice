@@ -122,3 +122,13 @@ TEST(PracticeTest, is_equal_all_negative){
 	ASSERT_LE(num[2], num[1]);
 	ASSERT_LE(num[2], num[0]);	
 }
+
+
+TEST(PracticeTest, first_less_than_second_and_third){
+	Practice obj;
+	int num[3] = { -1, 0, 0 };
+	obj.sortDescending(num[0], num[1], num[2]);
+	ASSERT_LE(num[1], num[0]);
+	ASSERT_LE(num[2], num[1]);
+	ASSERT_LE(num[2], num[0]);	
+}
