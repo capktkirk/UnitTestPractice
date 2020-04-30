@@ -86,9 +86,6 @@ TEST(PracticeTest, is_simple_sort)
  * Check for Negative Values.
  */
 TEST(PracticeTest, is_negative_sort){
-	// num[0] = 1;
-	// num[1] = 0;
-	// num[2] = -1;
 	Practice obj;
 	int num[3] = { 1, 0, -1 };
 	obj.sortDescending(num[0], num[1], num[2]);
