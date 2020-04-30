@@ -124,7 +124,7 @@ TEST(PracticeTest, is_equal_all_negative){
 }
 
 
-TEST(PracticeTest, first_less_than_second_and_third){
+TEST(PracticeTest, first_less_than_third_second_less_than_both){
 	Practice obj;
 	int num[3] = { -1, -3, 0 };
 	obj.sortDescending(num[0], num[1], num[2]);
